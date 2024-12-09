@@ -1,0 +1,24 @@
+{
+  "landlords": [
+    {
+      "id": "1",
+      "associated_llcs": "10 Parkside LLC",
+      "violations": "illegal addition"
+    },
+    {
+      "id": "2",
+      "associated_llcs": "14 Madison LLC",
+      "violations": "invalid CO"
+    },
+    {
+      "id": "3",
+      "associated_llcs": "11 Broadway LLC",
+      "violations": "non-permitted work order"
+    },
+    {
+      "id": "cfcb",
+      "associated_llcs": "amrita",
+      "violations": "her bunny broke my computer"
+    }
+  ]
+}
