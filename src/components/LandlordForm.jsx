@@ -11,7 +11,7 @@ function LandlordForm() {
     async function handleSubmit(event) {
         event.preventDefault()
         
-        const response = await fetch('http://localhost:3000/landlords', {
+        const response = await fetch('http://localhost:5555/landlords', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify( { 

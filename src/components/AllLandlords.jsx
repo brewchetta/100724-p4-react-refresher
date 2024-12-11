@@ -7,7 +7,7 @@ function AllLandlords() {
     const [landlords, setLandlords] = useState( [] )
 
     async function getLandlordz() {
-        const response = await fetch('http://localhost:3000/landlords')
+        const response = await fetch('http://localhost:5555/landlords')
         const data = await response.json()
         setLandlords( data )
     }
