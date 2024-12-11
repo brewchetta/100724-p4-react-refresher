@@ -6,7 +6,6 @@ function LandlordForm() {
     const navigate = useNavigate()
 
     const [llc, setLLC] = useState('')
-    const [violations, setViolations] = useState('')
 
     async function handleSubmit(event) {
         event.preventDefault()
@@ -16,7 +15,6 @@ function LandlordForm() {
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify( { 
                 associated_llcs: llc,
-                violations
             } )
         })
         
@@ -36,14 +34,6 @@ function LandlordForm() {
             placeholder="associated llcs"
             value={llc}
             onChange={ (event) => setLLC(event.target.value) }
-            />
-
-            <br/>
-
-            <input type="text"
-            placeholder="violations"
-            value={violations}
-            onChange={ (event) => setViolations(event.target.value) }
             />
 
             <br/>

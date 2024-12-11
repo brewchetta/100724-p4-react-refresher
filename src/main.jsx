@@ -4,6 +4,7 @@ import './index.css'
 import App from './components/App'
 import AllLandlords from './components/AllLandlords'
 import LandlordForm from './components/LandlordForm'
+import LandlordDetails from './components/LandlordDetails'
 
 const routes = [
   {
@@ -17,7 +18,11 @@ const routes = [
       {
         path: "add-new-landlord",
         element: <LandlordForm />
-      }
+      },
+      {
+        path: "landlords/:id",
+        element: <LandlordDetails />
+      },
     ]
   }
 ]
