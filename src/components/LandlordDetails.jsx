@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import LandlordRatingForm from './LandlordRatingForm'
 
 function LandlordDetails() {
 
@@ -50,6 +51,10 @@ function LandlordDetails() {
     return (
         <div>
             <h1>{landlord.associated_llcs}</h1>
+
+            <LandlordRatingForm landlord={landlord} setLandlord={setLandlord} />
+
+            <p>Rating: {landlord.rating}</p>
 
             <button onClick={handleDelete}>Delete Landlord</button>
 
